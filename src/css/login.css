@@ -1,0 +1,21 @@
+
+  .login-content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: flex-end; 
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .login-background {
+    flex: 1;
+    background-image: linear-gradient(to right, transparent 65%, white), url('../images/login_image.jpeg');
+    background-size: cover;
+  }
+  
