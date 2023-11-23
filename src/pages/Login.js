@@ -26,11 +26,11 @@ function Login() {
   }
 
   return (
-    <div className="login-container">
+    <article className="login-container">
     <div className="login-background">
     </div>
     <div className="login-content">
-      <Card style={{ minWidth: 300 }}>
+      <Card >
         <CardContent>
           <h2>Iniciar sesión</h2>
           <TextField
@@ -53,7 +53,6 @@ function Login() {
           <Button
             variant="contained"
             color="primary"
-            minWidth
             onClick={handleLogin}
           >
             Ingresar
@@ -61,7 +60,7 @@ function Login() {
         </CardContent>
       </Card>
       </div>
-  </div>
+  </article>
   );
 }
 

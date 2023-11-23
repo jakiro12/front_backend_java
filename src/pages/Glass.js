@@ -1,11 +1,12 @@
-import NavBarToSelectModel from '../components/NavBar';
-import '../css/styles.css'
-import CreateNewGlassCompany from '../components/formsHandlers/CreateNewCompany';
-import FooterView from '../components/Footer';
 //import { useState, useEffect } from 'react';
+import FooterView from '../components/Footer';
+import NavBarToSelectModel from '../components/NavBar';
+import CreateNewGlassItem from '../components/formsHandlers/CreateNewGlass';
+import '../css/styles.css';
 
-const Companies = () => {
-  /*  const [data,setData]=useState([])
+
+export default function CreateNewGlass(){
+    /*  const [data,setData]=useState([])
      useEffect(() => {
      
         const fetchData = async () => {
@@ -24,13 +25,11 @@ const Companies = () => {
     
         fetchData();
       }, []);  */
-  return (
-    <article className='dashboard_login_container'>
-      <NavBarToSelectModel/>
-      <CreateNewGlassCompany/>
-      <FooterView/>
-    </article>
-  );
-};
-
-export default Companies;
+    return(
+        <article className='glass_container'>
+            <NavBarToSelectModel/>
+            <CreateNewGlassItem/>
+            <FooterView/>
+        </article>
+    )
+}

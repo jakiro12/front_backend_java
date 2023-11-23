@@ -11,6 +11,7 @@
     justify-content: flex-end; 
     height: 100vh;
     overflow: hidden;
+    width: 100%;
   }
   
   .login-background {
